@@ -1,0 +1,78 @@
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+#scroll_box {
+    height: 500px;
+    background-color: grey;
+    white-space: pre;
+}
+
+#about_me_box{
+    /* height: 500px; */
+    background-color: rgb(165, 165, 165);
+    padding-top: 30px;
+}
+
+#about_me_title, #skills_title{
+    margin: 0px;
+    text-align: center;
+}
+
+#picture_of_me{
+    width: 400px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#about_me_text{
+    font-size: 28px;
+    padding: 0px;
+}
+
+#about_me_row{
+    background-color: rgb(165, 165, 165);
+    padding: 20px;
+}
+
+#test{
+    margin-top: 40px;
+}
+
+#skills_box{
+    background-color: rgb(207, 207, 207);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#skill, p{
+    font-size: 18px;
+}
+
+.stack_image{
+    width: 100px;
+}
+
+.project_image{
+    width: 400px;
+    margin: 20px 0px 10px 0px;
+}
+
+#project_box{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: rgb(228, 228, 228);
+}
+
+.education_image{
+    width: 200px;
+}
+
+#education_box{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: rgb(146, 146, 146);
+}
