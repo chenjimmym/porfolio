@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="/index.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -16,46 +17,64 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <h3 id="website_name">Jimmy Chen</h3>
         <ul class="nav navbar-nav navbar-right" id="navbar_buttons">
-            <li><a href="#about_me_box">About Me</a></li>
-            <li><a href="#skills_box">Skills</a></li>
-            <li><a href="#project_box">Projects</a></li>
-            <li><a href="#education_box">Education</a></li>
+            <li>
+                <a href="#about_me_box">About Me</a>
+            </li>
+            <li>
+                <a href="#skills_box">Skills</a>
+            </li>
+            <li>
+                <a href="#project_box">Projects</a>
+            </li>
+            <li>
+                <a href="#education_box">Education</a>
+            </li>
         </ul>
     </nav>
+
     <div id="scroll_box" class="fixed fixed1">
-        <h1 id="main_title">Programming...
-            <div id="title_scroll"></div>
-        </h1>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h1 class="main_title">Programming...</h1>
+            </div>
+            <div class="col-md-5">
+                <h1>
+                    <div id="title_scroll" class="main_title"></div>
+                </h1>
+            </div>
+        </div>
     </div>
     <!-- <div class="fixed fixed1"></div> -->
 
     <div id="about_me_box" class="scrolling">
-        <h1 id="about_me_title">About Me</h1>
+        <h1 id="about_me_title" class="section_title">About Me</h1>
         <div class="row" id="about_me_row">
             <div class="col-md-1"></div>
             <div class="col-md-5">
-                <img src="/me.jpg" alt="Picture of me" id="picture_of_me">
+                <img src="/me.jpg" alt="Picture of me" id="picture_of_me" class="panel">
             </div>
             <div class="col-md-5" id="test">
                 <span id="about_me_text">I am a technology enthusiast with skills in multiple web development stacks. I enjoy software engineering
-                    and exploring the nature on my free time. I also have a background in business and econonmics.</span>
+                    and exploring the nature on my free time. I am based in the bay area and is open to opporunities. I also
+                    have a background in business and econonmics.</span>
             </div>
         </div>
     </div>
     <div class="fixed fixed2"></div>
 
     <div id="skills_box" class="scrolling">
-        <h1 id="skills_title">Skills</h1>
+        <h1 id="skills_title" class="section_title">Skills</h1>
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h2 id="stacks">Software Stacks:</h2>
                 <p>
-                    <img src="/python.png" alt="python" class="stack_image"> Python: Django, MySQL, Flask</p>
+                    <img src="/python.png" alt="python" class="stack_image"> <span class="stack_name">Python:</span> Django, MySQL, Flask</p>
                 <p>
-                    <img src="/mean.png" alt="python" class="stack_image"> MEAN: Javascript, MongoDB, Expree.js, Angular, Node.js</p>
+                    <img src="/mean.png" alt="python" class="stack_image"> <span class="stack_name">MEAN:</span> Javascript, MongoDB, Expree.js, Angular, Node.js</p>
                 <p>
-                    <img src="/ruby.png" alt="python" class="stack_image"> Ruby on Rails: RSPEC, Capybara, PostgreSQL</p>
+                    <img src="/ruby.png" alt="python" class="stack_image"> <span class="stack_name">Ruby on Rails:</span> RSPEC, Capybara, PostgreSQL</p>
                 <h2 id="technologies">Technologies: </h2>
                 <p>HTML, CSS, jQuery, Git, Github, AJAX, API, TDD, MVC Architecture, Object Oriented Programming</p>
             </div>
@@ -64,32 +83,36 @@
     <div class="fixed fixed3"></div>
 
     <div id="project_box" class="scrolling">
-        <h1>Projects</h1>
+        <h1 class="section_title">Projects</h1>
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-5 project">
-                <img src="/book_review_project.png" alt="Book Review Image" class="project_image">
-                <p>
-                    <a href="https://github.com/chenjimmym/Django_Book_Review">Github Repository</a>
-                </p>
+                <a href="http://52.53.232.157">
+                    <img src="/book_review_project.png" alt="Book Review Image" class="project_image panel">
+                </a>
+                <p class="click_image">(Click image to go to website)</p>
+                <p class="project_name">The Book Review</p>
                 <p>A website built on Python with Django for posting book reviews with ratings. User created accounts are secured
                     with hashed password storage. SQLite was used to manage the relational database. Front-end technologies
                     included jQuery and Twitter Bootstrap framework.</p>
+                <a href="https://github.com/chenjimmym/Django_Book_Review">Github Repository</a>
             </div>
             <div class="col-md-5 project">
-                <img src="/weather_project.png" alt="Book Review Image" class="project_image">
-                <p>
-                    <a href="https://github.com/chenjimmym/WeatherApp">Github Repository</a>
-                </p>
+                <a href="http://54.153.23.54">
+                    <img src="/weather_project.png" alt="Book Review Image" class="project_image panel">
+                </a>
+                <p class="click_image">(Click image to go to website)</p>
+                <p class="project_name">Weather App</p>
                 <p>A simple weather website to show current weather with search location feature. Built using Angular, NodeJS,
                     and Express and Weather data gathered through an external API</p>
+                <a href="https://github.com/chenjimmym/WeatherApp">Github Repository</a>
             </div>
         </div>
     </div>
     <div class="fixed fixed4"></div>
-    
+
     <div id="education_box">
-        <h1 id="education_title">Education</h1>
+        <h1 id="education_title" class="section_title">Education</h1>
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-5">
@@ -102,20 +125,30 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-5">
-                <p>Coding Dojo</p>
-                <p>Intensive training on web development technologies and programming skills.</p>
-                <p>Study and analyze computer science concepts and algorithms</p>
+                <p class="education_name">Coding Dojo</p>
+                <p class="education_desc">Intensive training on web development technologies and programming skills.</p>
+                <p class="education_desc">Studied and analyzed computer science concepts and algorithms.</p>
             </div>
             <div class="col-md-5">
-                <p>University of California, Santa Cruz</p>
-                <p>Bachelor of Arts, Business Management Economic</p>
-                <p>Sep, 2014 - June, 2017 (3 years)</p>
-                <p>Honor in Major, University Honor, Dean's Honor</p>
+                <p class="education_name">University of California, Santa Cruz</p>
+                <p class="education_desc">Bachelor of Arts, Business Management Economic</p>
+                <p class="education_desc">Sep, 2014 - June, 2017 (3 years)</p>
+                <p class="education_desc">Honor in Major, University Honor, Dean's Honor</p>
             </div>
         </div>
     </div>
     <div class="fixed fixed5"></div>
-    
+
+    <div class="footer">
+        <a href="https://www.linkedin.com/in/chenjimmym/">
+            <i class="fa fa-linkedin"> LinkedIn</i>
+        </a>
+        <a href="https://github.com/chenjimmym">
+            <i class="fa fa-github"> Github</i>
+        </a>
+        <i class="fa fa-envelope"> Email: chen.jimmym@gmail.com</i>
+    </div>
+
 </body>
 
 </html>
