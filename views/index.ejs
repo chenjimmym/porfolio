@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>Jimmy Chen</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,13 +12,22 @@
     <script type="text/javascript" src="/index.js"></script>
 </head>
 
-<body>
-    <div id="scroll_box" class="scrolling">
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <h3 id="website_name">Jimmy Chen</h3>
+        <ul class="nav navbar-nav navbar-right" id="navbar_buttons">
+            <li><a href="#about_me_box">About Me</a></li>
+            <li><a href="#skills_box">Skills</a></li>
+            <li><a href="#project_box">Projects</a></li>
+            <li><a href="#education_box">Education</a></li>
+        </ul>
+    </nav>
+    <div id="scroll_box" class="fixed fixed1">
         <h1 id="main_title">Programming...
             <div id="title_scroll"></div>
         </h1>
     </div>
-    <div class="fixed fixed1"></div>
+    <!-- <div class="fixed fixed1"></div> -->
 
     <div id="about_me_box" class="scrolling">
         <h1 id="about_me_title">About Me</h1>
@@ -78,23 +87,26 @@
         </div>
     </div>
     <div class="fixed fixed4"></div>
-
+    
     <div id="education_box">
         <h1 id="education_title">Education</h1>
         <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-2">
+            <div class="col-md-5">
                 <img src="/dojo.png" alt="Coding Dojo" class="education_image">
             </div>
-            <div class="col-md-3">
+            <div class="col-md-5">
+                <img src="/ucsc.png" alt="UCSC" class="education_image">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
                 <p>Coding Dojo</p>
                 <p>Intensive training on web development technologies and programming skills.</p>
                 <p>Study and analyze computer science concepts and algorithms</p>
             </div>
-            <div class="col-md-2">
-                <img src="/ucsc.png" alt="UCSC" class="education_image">
-            </div>
-            <div class="col-md-3">
+            <div class="col-md-5">
                 <p>University of California, Santa Cruz</p>
                 <p>Bachelor of Arts, Business Management Economic</p>
                 <p>Sep, 2014 - June, 2017 (3 years)</p>
@@ -102,7 +114,8 @@
             </div>
         </div>
     </div>
-
+    <div class="fixed fixed5"></div>
+    
 </body>
 
 </html>
