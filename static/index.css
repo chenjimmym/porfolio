@@ -1,6 +1,33 @@
-h1 {
-    color: rgb(0, 0, 0);
+/* scroll code */
+body, html, main {
+	height: 100%;
 }
+
+.fixed {
+	min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fixed.fixed1 {
+    background-image: url("/1.JPG");
+}
+.fixed.fixed2 {
+    background-image: url("/2.JPG");
+}
+.fixed.fixed3 {
+    background-image: url("/3.JPG");
+}
+.fixed.fixed4 {
+    background-image: url("/4.JPG");
+}
+
+/* .scrolling {
+	min-height: 100%;
+} */
+/* scroll code end */
 
 #scroll_box {
     height: 500px;
