@@ -32,6 +32,12 @@ body{
     font-family: Arial Black, Helvetica, sans-serif;
 }
 
+#website_name{
+    font-family: Courier, Courier New, monospace;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #000000;
+}
+
 .section_title{
     font-style: italic;
     color: rgb(126, 126, 126);
@@ -124,8 +130,14 @@ body{
 #project_box{
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     background: rgb(224, 223, 223);
+}
+
+#this_website{
+    font-size: 12px;
+    margin-top: 40px;
+    font-style: italic;
 }
 
 .education_image{
